@@ -1,0 +1,48 @@
+dataset_config:
+  data_sources:
+    - label_directory_path: /home/nvidia07/cat-breed-detector/data/kitti_labels
+      image_directory_path: /home/nvidia07/cat-breed-detector/data/images
+      train_records_path: /home/nvidia07/cat-breed-detector/data/train.txt
+      val_records_path: /home/nvidia07/cat-breed-detector/data/val.txt
+  image_extension: ".jpg"
+  target_classes:
+    - cat
+
+model_config:
+  pretrained_model_path: /path/to/pretrained/resnet18.etlt  # Or use NVIDIA NGC pretrained backbone
+  num_layers: 18
+  arch: "resnet"
+  all_projections: True
+  freeze_blocks: 0
+  input_image_size: [384, 384]
+
+training_config:
+  batch_size: 8
+  num_epochs: 80
+  learning_rate: 0.001
+  regularizer:
+    type: "l2"
+    weight: 1e-4
+  optimizer: "adam"
+  augmentation_config:
+    spatial_augmentation:
+      hflip_probability: 0.5
+      zoom_min: 1.0
+      zoom_max: 1.3
+    color_augmentation:
+      hue_rotation_max: 15
+      saturation_shift_max: 0.2
+      contrast_scale_max: 0.1
+      contrast_center: 0.5
+
+evaluation_config:
+  validation_period_during_training: 5
+  average_precision_mode: SAMPLE
+  matching_iou_threshold: 0.5
+
+checkpoint_config:
+  checkpoint_interval: 10
+  enable_checkpointing: True
+
+output_config:
+  output_directory: /home/nvidia07/cat-breed-detector/output

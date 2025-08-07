@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 55
+names: ['Abyssianian', 'American Curl', 'American Short Hair', 'American Wirehair', 'Balinese', 'Bengal', 'Birman', 'Bombay', 'British Shorthair', 'Burmese', 'Burmilla', 'Calico', 'Canadian Hairless', 'Chartreux', 'Cornish Rex', 'Cymric', 'Devon Rex', 'Dilute Tortoiseshell', 'Domestic Long Hair', 'Domestic Medium Hair', 'Domestic Short Hair', 'Egyptian Mau', 'Exotic Shorthair', 'Extra-Toe', 'Havana', 'Himalayan', 'Japanese Bobtail', 'Javanese', 'Korat', 'Laperm', 'Maine Coon', 'Manx', 'Munchkin', 'Norwegian Forest Cat', 'Ocicat', 'Oriental Long Hair', 'Oriental Short Hair', 'Oriental Tabby', 'Persian', 'Pixiebob', 'Ragamuffin', 'Ragdoll', 'Russian Blue', 'Scottish Fold', 'Selkirk Rex', 'Siamese', 'Siberian', 'Silver', 'Singapura', 'Snowshoe', 'Somali', 'Sphynx', 'Tabby', 'Turkish Angora', 'Turkish Van']
+
+roboflow:
+  workspace: andrue
+  project: cat-breeds-pjhqm
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/andrue/cat-breeds-pjhqm/dataset/2

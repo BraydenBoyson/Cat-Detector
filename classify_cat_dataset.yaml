@@ -1,0 +1,49 @@
+path: /home/nvidia07/cat-breed-detector/data/images  # parent directory
+train: train
+val: val  # make sure /val exists and is structured the same way
+
+names:
+  - Abyssinian
+  - American_Curl
+  - American_Short_Hair
+  - Balinese
+  - Bengal
+  - Birman
+  - Bombay
+  - British
+  - Burmese
+  - Calico
+  - Chartreux
+  - Cornish_Rex
+  - Devon_Rex
+  - Dilute_Tortoiseshell
+  - Domestic_Long_Hair
+  - Domestic_Medium_Hair
+  - Domestic_Short_Hair
+  - Egyptian
+  - Havana
+  - Himalayan
+  - Japanese_Bobtail
+  - Korat
+  - Maine
+  - Manx
+  - Munchkin
+  - Norwegian_Forest_Cat
+  - Ocicat
+  - Oriental_Short_Hair
+  - Oriental_Tabby
+  - Persian
+  - Pixiebob
+  - Ragamuffin
+  - Ragdoll
+  - Russian_Blue
+  - Scottish_Fold
+  - Selkirk_Rex
+  - Siamese
+  - Siberian
+  - Silver
+  - Snowshoe
+  - Sphynx
+  - Tabby
+  - Turkish_Angora
+  - Turkish_Van
